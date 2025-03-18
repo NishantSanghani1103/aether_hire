@@ -2,6 +2,7 @@ $('#indrustiesSlider').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    dots:false,
     responsive:{
         0:{
             items:1
@@ -18,6 +19,7 @@ $('#serviceSlider').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
+    dots:false,
     responsive:{
         0:{
             items:1
@@ -33,7 +35,7 @@ $('#serviceSlider').owlCarousel({
 $('#clientSlider').owlCarousel({
     loop:true,
     margin:20,
-    nav:true,
+    nav:false,
     autoplay:true,
     responsive:{
         0:{

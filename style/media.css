@@ -9,6 +9,9 @@
     /* .sliderImage{
         height: auto;
     } */
+    .sliderImage{
+        height: 50vh;
+    }
     .serviceContent h2 {
         font-size: 25px;
     }

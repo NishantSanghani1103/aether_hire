@@ -26,7 +26,11 @@ header {
 .bannerSliderContent p {
     font-size: 18px;
 }
+#bannerSlider .carousel-caption{
+    position: absolute;
+    top: 25%;
 
+}
 /* #bannerSlider .NextPrevIconSlider{
     width: 50px;
     height: 50px;
@@ -37,6 +41,10 @@ header {
 #bannerFrame {
     height: 200px;
 
+}
+
+.sliderImage {
+    height: 80vh;
 }
 
 .headingItems>h2 {
@@ -91,6 +99,38 @@ header {
     color: #545454;
 }
 
+#indrustiesSlider .owl-next {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #545454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#indrustiesSlider .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #545454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* .owl-next span{
+    display: flex;
+    justify-content: center;
+} */
 .card-body>h5 {
     color: #545454;
     font-size: 22px;
@@ -100,11 +140,6 @@ header {
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
     font-size: 40px !important;
-}
-
-
-#industries , #ourService .owl-dots {
-    display: none;
 }
 
 #about {
@@ -141,6 +176,35 @@ header {
 
 #ourService {
     background-color: #282828;
+    padding-bottom: 80px;
+}
+
+#serviceSlider .owl-next {
+    position: absolute;
+    top: 45%;
+    right: -43px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #545454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#serviceSlider .owl-prev {
+    position: absolute;
+    top: 45%;
+    left: -43px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #545454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 .card-body h5 {
@@ -150,15 +214,55 @@ header {
 #clients {
     background-color: #eff5ff;
 }
-#clients .owl-nav {
-    display: none;
-}
+
 
 #clients .owl-theme .owl-dots .owl-dot span {
     margin-top: 50px !important;
     width: 50px;
     height: 10px;
 }
-#clientSlider .active span{
+
+#clientSlider .active span {
     color: #e57026;
- }
+}
+
+.cardContent>img {
+    height: 250px;
+}
+
+.btnOrange {
+    background-color: #e57026;
+}
+
+footer {
+    background: rgb(0, 0, 0);
+}
+
+.contentItems {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e57026;
+}
+
+.footerItems {
+    border: 1px solid red;
+}
+
+.footerItemsContent>figure>img {
+    width: 266px;
+    height: 119px;
+}
+
+.footerLinkTitle>h2 {
+    font-size: 20px;
+}
+
+.borderMainDiv {
+    left: 20px;
+}
+
+.borderDiv {
+    border: 2px solid white;
+
+}
