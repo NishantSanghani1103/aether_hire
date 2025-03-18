@@ -1,0 +1,40 @@
+@media only screen and (min-width:200px) and (max-width:575px) {
+    #navbarNav {
+        background-color: #002e5b;
+    }
+
+    #navbarNav>ul>li>a {
+        color: white;
+    }
+    /* .sliderImage{
+        height: auto;
+    } */
+    .serviceContent h2 {
+        font-size: 25px;
+    }
+    #topHeader{
+        display: none;
+    }
+    #about h2 {
+        font-size: 32px;
+    }
+    .headingItems h2 {
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+    #navbarNav {
+        background-color: #002e5b;
+    }
+
+    #navbarNav>ul>li>a {
+        color: white;
+    }
+    #topHeader{
+        display: none;
+    }
+    .card-body>h5 {
+        font-size: 15px;
+    }
+}

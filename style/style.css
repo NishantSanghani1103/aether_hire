@@ -1,0 +1,164 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+}
+
+#topHeader {
+    background-image: -webkit-linear-gradient(0deg, #e57026 0, #ed602a 100%);
+}
+
+.navbar-brand>i {
+    font-size: 14px;
+}
+
+header {
+    box-shadow: 0px 0px 2px 1px #ccc;
+}
+
+.bannerSliderContent h2 {
+    font-size: 3.5rem;
+}
+
+.bannerSliderContent p {
+    font-size: 18px;
+}
+
+/* #bannerSlider .NextPrevIconSlider{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50% ;
+    color: black;
+} */
+#bannerFrame {
+    height: 200px;
+
+}
+
+.headingItems>h2 {
+    font-size: 42px;
+}
+
+.serviceContent h2 {
+    font-size: 42px;
+    color: #545454;
+}
+
+.serviceContent p {
+    font-size: 15px;
+}
+
+#job {
+    background-color: #f6faff;
+}
+
+#job h2 {
+    font-size: 42px;
+    color: #545454;
+}
+
+.jobItemsHeader img {
+    width: 80px;
+    height: 35px;
+}
+
+.jobItemsHeader>p {
+    font-size: 22px;
+}
+
+.jobItemsHeader>p>span {
+    font-size: 14px;
+}
+
+.jobItemsHeader>button {
+    background-image: -webkit-linear-gradient(0deg, #e57026 0, #ed602a 100%);
+}
+
+.jobItemsHeader>h6>i {
+    color: #ed602a;
+}
+
+#industries {
+    background-color: #eff5ff;
+}
+
+#industries h2 {
+    font-size: 42px;
+    color: #545454;
+}
+
+.card-body>h5 {
+    color: #545454;
+    font-size: 22px;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+    font-size: 40px !important;
+}
+
+
+#industries , #ourService .owl-dots {
+    display: none;
+}
+
+#about {
+    background-color: #f6faff;
+}
+
+#about h2 {
+    font-size: 42px;
+    color: #545454;
+}
+
+.aboutItemsImage {
+    background-color: #545454;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#about h5 {
+    font-size: 24px;
+
+}
+
+#about h5>a {
+    color: #545454;
+}
+
+#about p {
+    font-size: 15px;
+}
+
+#ourService {
+    background-color: #282828;
+}
+
+.card-body h5 {
+    font-size: 20px;
+}
+
+#clients {
+    background-color: #eff5ff;
+}
+#clients .owl-nav {
+    display: none;
+}
+
+#clients .owl-theme .owl-dots .owl-dot span {
+    margin-top: 50px !important;
+    width: 50px;
+    height: 10px;
+}
+#clientSlider .active span{
+    color: #e57026;
+ }
