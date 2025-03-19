@@ -1,4 +1,7 @@
 @media only screen and (min-width:200px) and (max-width:575px) {
+    #mobileButton{
+        display: block;
+    }
     #navbarNav {
         background-color: #002e5b;
     }
@@ -10,8 +13,23 @@
         height: auto;
     } */
     .sliderImage{
-        height: 50vh;
+        height: 40vh;
     }
+    #bannerSlider .d-none {
+        display: block !important;
+    }
+    #bannerSlider .bannerSliderContent h2 {
+        font-size: 20px;
+    }
+    #bannerSlider  .bannerSliderContent p {
+        font-size: 13px;
+    }
+    #bannerFrame{
+        display: none;
+    }
+    /* #service{
+        padding-top: 100px;
+    } */
     .serviceContent h2 {
         font-size: 25px;
     }
@@ -23,6 +41,16 @@
     }
     .headingItems h2 {
         font-size: 32px;
+    }
+    #serviceSlider .owl-prev {
+        
+        left: -30px;
+    }
+    #serviceSlider .owl-next {
+        right: -24px;
+    }
+    #newsLatterEmail .btn {
+        right: 5px;
     }
 }
 
@@ -39,5 +67,8 @@
     }
     .card-body>h5 {
         font-size: 15px;
+    }
+    #bannerFrame{
+        display: none;
     }
 }

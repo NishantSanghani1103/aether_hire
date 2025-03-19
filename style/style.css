@@ -5,8 +5,91 @@
     text-decoration: none;
     list-style: none;
     font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
 }
 
+.whatsappButton:hover .fa-whatsapp{
+    transform: rotate(360deg);
+}
+.emailButton:hover .fa-envelope{
+    transform: rotate(360deg);
+}
+.aboutItems:hover{
+    border: 4px solid #282828;
+}
+.arrrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #545454;
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    z-index: 999;
+    align-items: center;
+    align-content: center;
+
+}
+
+.arrrow i {
+    align-content: center;
+    display: flex;
+
+    justify-content: center;
+
+}
+
+#mobileButton {
+
+    display: none;
+}
+
+.mobileButtonItems {
+
+    border-right: 1px solid white;
+    background-color: #e57026;
+}
+
+#contactButton {
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.whatsappButton {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatsappButtonContent{
+    height: 20px;
+    width: 20px;
+}
+.emailButton {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: #e57026;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsappButton>i {
+    transition:  0.5s ease-in-out;
+    font-size: 30px;
+}
+.emailButton>i{
+    transition:  0.5s ease-in-out;
+}
 #topHeader {
     background-image: -webkit-linear-gradient(0deg, #e57026 0, #ed602a 100%);
 }
@@ -19,6 +102,32 @@ header {
     box-shadow: 0px 0px 2px 1px #ccc;
 }
 
+#banner .carousel-control-prev-icon {
+
+    background-color: black;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#banner .carousel-control-next-icon {
+
+    background-color: black;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#banner .carousel-control-next-icon {
+    font-size: 10px;
+}
+
+#bannerSlider .carousel-indicators {
+    display: none;
+}
+
 .bannerSliderContent h2 {
     font-size: 3.5rem;
 }
@@ -26,11 +135,13 @@ header {
 .bannerSliderContent p {
     font-size: 18px;
 }
-#bannerSlider .carousel-caption{
+
+#bannerSlider .carousel-caption {
     position: absolute;
     top: 25%;
 
 }
+
 /* #bannerSlider .NextPrevIconSlider{
     width: 50px;
     height: 50px;
@@ -39,7 +150,20 @@ header {
     color: black;
 } */
 #bannerFrame {
-    height: 200px;
+    box-shadow: 0px 0px 2px 0px #ccc;
+    background-color: white;
+    z-index: 99;
+    position: absolute;
+    left: 5%;
+    bottom: -10%
+}
+
+.bannerFramItems {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: -webkit-linear-gradient(0deg, #e57026 0, #ed602a 100%);
+
 
 }
 
@@ -218,12 +342,12 @@ header {
 
 #clients .owl-theme .owl-dots .owl-dot span {
     margin-top: 50px !important;
-    width: 50px;
-    height: 10px;
+    width: 30px;
+    height: 5px;
 }
 
-#clientSlider .active span {
-    color: #e57026;
+#clientSlider .owl-dot.active span {
+    background-color: #e57026;
 }
 
 .cardContent>img {
@@ -245,9 +369,9 @@ footer {
     background-color: #e57026;
 }
 
-.footerItems {
+/* .footerItems {
     border: 1px solid red;
-}
+} */
 
 .footerItemsContent>figure>img {
     width: 266px;
@@ -258,6 +382,14 @@ footer {
     font-size: 20px;
 }
 
+.footerLinkTitle>h2 {
+    font-size: 20px;
+}
+
+.footerLinkTitle>nav>ul>li>a {
+    font-size: 14px;
+}
+
 .borderMainDiv {
     left: 20px;
 }
@@ -265,4 +397,40 @@ footer {
 .borderDiv {
     border: 2px solid white;
 
+}
+
+#newsLatterEmail .form-control {
+    height: 70px;
+    border-radius: 10px;
+}
+
+#newsLatterEmail .btn {
+    color: white;
+    z-index: 999;
+    position: absolute !important;
+    right: 14px;
+    top: 14%;
+    padding: 20px 42px;
+    border: none;
+    background-image: -webkit-linear-gradient(0deg, #e57026 0, #ed602a 100%);
+    border-radius: 15px;
+    padding: 12px 45px;
+}
+
+.newLatterIcon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-image: -webkit-linear-gradient(0deg, #e57026 0, #ed602a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .footItems{
+    border: 1px solid red;
+} */
+.footItems>p>i {
+    font-size: 12px;
+    color: #e57026;
 }
