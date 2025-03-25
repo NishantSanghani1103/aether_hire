@@ -14,6 +14,9 @@
 .emailButton:hover .fa-envelope{
     transform: rotate(360deg);
 }
+.aboutItems{
+    border: 4px solid transparent;
+}
 .aboutItems:hover{
     border: 4px solid #282828;
 }
