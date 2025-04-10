@@ -91,7 +91,12 @@
     #topHeader {
         display: none;
     }
-
+    .sliderImage {
+        height: 50vh;
+    }
+    .bannerSliderContent h2 {
+        font-size: 2.5rem;
+    }
     .card-body>h5 {
         font-size: 15px;
     }
