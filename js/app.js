@@ -3,6 +3,7 @@ $('#indrustiesSlider').owlCarousel({
     margin: 10,
     nav: true,
     dots: false,
+    smartSpeed:1000,
     responsive: {
         0: {
             items: 1
@@ -17,9 +18,10 @@ $('#indrustiesSlider').owlCarousel({
 })
 $('#serviceSlider').owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 25,
     nav: true,
     dots: false,
+    smartSpeed: 1000,
     responsive: {
         0: {
             items: 1

@@ -7,19 +7,48 @@
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
 }
+@keyframes fadeInUp {
+    0%{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
 
-.whatsappButton:hover .fa-whatsapp{
+.whatsappButton:hover .fa-whatsapp {
     transform: rotate(360deg);
 }
-.emailButton:hover .fa-envelope{
+
+.emailButton:hover .fa-envelope {
     transform: rotate(360deg);
 }
-.aboutItems{
+
+.aboutItems {
     border: 4px solid transparent;
 }
-.aboutItems:hover{
+
+.aboutItems:hover {
     border: 4px solid #282828;
 }
+
+.indrustiesSliderImage:hover .overlayItems {
+    transform: scale(1);
+}
+
+#serviceSlider .card:hover
+{
+    transform: scale(1.1);
+    /* Scale only the outer frame */
+}
+
+#serviceSlider .card:hover .overlayService {
+    transform: scale(1);
+    transform-origin: center;
+}
+
 .arrrow {
     width: 50px;
     height: 50px;
@@ -71,10 +100,12 @@
     justify-content: center;
     align-items: center;
 }
-.whatsappButtonContent{
+
+.whatsappButtonContent {
     height: 20px;
     width: 20px;
 }
+
 .emailButton {
     width: 50px;
     height: 50px;
@@ -87,12 +118,14 @@
 }
 
 .whatsappButton>i {
-    transition:  0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
     font-size: 30px;
 }
-.emailButton>i{
-    transition:  0.5s ease-in-out;
+
+.emailButton>i {
+    transition: 0.5s ease-in-out;
 }
+
 #topHeader {
     background-image: -webkit-linear-gradient(0deg, #e57026 0, #ed602a 100%);
 }
@@ -107,7 +140,18 @@ header {
 
 #banner .carousel-control-prev-icon {
 
-    background-color: black;
+    /* background-color: black;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; */
+
+
+
+    color: black !important;
+    background-color: white;
+    box-shadow: 2px 2px 0 0 white;
+    /* background-color: black; */
     display: inline-block;
     width: 50px;
     height: 50px;
@@ -116,11 +160,20 @@ header {
 
 #banner .carousel-control-next-icon {
 
-    background-color: black;
+    color: black !important;
+    background-color: white;
+    box-shadow: 2px 2px 0 0 white;
+    /* background-color: black; */
     display: inline-block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+/* 
+    background-color: black;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; */
 }
 
 #banner .carousel-control-next-icon {
@@ -130,7 +183,9 @@ header {
 #bannerSlider .carousel-indicators {
     display: none;
 }
-
+.bannerSliderContent{
+    animation: 2s fadeInUp;
+}
 .bannerSliderContent h2 {
     font-size: 3.5rem;
 }
@@ -254,6 +309,14 @@ header {
     color: white;
 }
 
+.overlayItems {
+    background-color: #ede0e01f;
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(0);
+    transition: 0.5s;
+}
+
 /* .owl-next span{
     display: flex;
     justify-content: center;
@@ -306,6 +369,7 @@ header {
     padding-bottom: 80px;
 }
 
+
 #serviceSlider .owl-next {
     position: absolute;
     top: 45%;
@@ -332,6 +396,18 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+#serviceSlider .card {
+    transition: 1s;
+    transform: scale(1);
+}
+
+.overlayService {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff17;
+    transform: scale(0);
 }
 
 .card-body h5 {
